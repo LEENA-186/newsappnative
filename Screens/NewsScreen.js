@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67b3a880b1fb37d30d76aa761f601ead84064981
 import React, { useContext, useState } from "react";
 import {
   Dimensions,

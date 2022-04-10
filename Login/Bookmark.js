@@ -19,6 +19,7 @@ const Bookmark = ({ route }) => {
   
 
 
+<<<<<<< HEAD
 const nav = useNavigation();
 // console.log("nav",route.params);
 const item = route.params.item
@@ -29,10 +30,28 @@ return (
       <Card>
         <View style={{ height: windowHeight, width: windowWidth,}}>
 
+=======
+    const nav = useNavigation();
+ console.log("nav",route.params);
+const item = route.params.item
+console.log("item",item.item);
+
+
+return (
+        <Card>
+        <View
+          style={{
+            height: windowHeight,
+            width: windowWidth,
+          
+          }}
+        >
+>>>>>>> 67b3a880b1fb37d30d76aa761f601ead84064981
           <Image
             source={{ uri: item.urlToImage }}
             style={{ height: "45%", resizeMode: "cover", width:"99%" }}
           />
+<<<<<<< HEAD
 
           <View style={{...styles.description, backgroundColor: darkTheme ? "#282C35" : "white",}}>
 
@@ -60,6 +79,40 @@ return (
           </View>
         </View>
       </Card>
+=======
+          <View
+            style={{
+              ...styles.description,
+              backgroundColor: darkTheme ? "#282C35" : "white",
+            }}
+          >
+            <Text style={{ ...styles.title, color: darkTheme ? "white" : "black" }}>
+              {item.title}
+            </Text>
+            <Text
+              style={{ ...styles.content, color: darkTheme ? "white" : "black" }}
+            >
+              {item.description}
+            </Text>
+            <Text style={{ color: darkTheme ? "white" : "black" }}>
+              Short by
+              <Text style={{ fontWeight: "bold" }}>
+                {" "}
+                {item.author ?? "unknown"}
+              </Text>
+            </Text>
+            <TouchableOpacity onPress={() => Linking.openURL(item.url)}
+            style={{ marginBottom:10,}}>
+              
+              <Text style={{ fontSize: 15, fontWeight: "bold", color: "white", }}>
+                Read More...
+               
+                </Text>
+      </TouchableOpacity>
+       </View>
+       </View>
+        </Card>
+>>>>>>> 67b3a880b1fb37d30d76aa761f601ead84064981
     );
 };
 
