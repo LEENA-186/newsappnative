@@ -5,7 +5,7 @@ import  AntDesign  from "react-native-vector-icons/AntDesign";
 import  SimpleLineIcons  from "react-native-vector-icons/SimpleLineIcons";
 import { NewsContext } from "../API/Context";
 import  MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import Entypo from 'react-native-vector-icons/Entypo'
+// import Entypo from 'react-native-vector-icons/Entypo'
 import  {useNavigation}  from "@react-navigation/native";
 
 const TopNavigation = ({ index, setIndex }) => {
